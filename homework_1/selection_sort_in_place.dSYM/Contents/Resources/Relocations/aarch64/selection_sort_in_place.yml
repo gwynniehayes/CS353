@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/gwynnie/Desktop/16/CS353/selection_sort_in_place'
+relocations:     []
+...

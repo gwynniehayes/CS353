@@ -1,0 +1,62 @@
+---
+title: "hw2"
+format: html
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+```
+
+```{r}
+selection <- read_csv("~/Desktop/16/CS353/homework_2/selection_runtimes.csv")
+insertion <- read_csv("~/Desktop/16/CS353/homework_2/insertion_runtimes.csv")
+bubble <- read_csv("~/Desktop/16/CS353/homework_2/bubble_runtimes.csv")
+merge <- read_csv("~/Desktop/16/CS353/homework_2/merge_runtimes.csv")
+quick <- read_csv("~/Desktop/16/CS353/homework_2/quick_runtimes.csv")
+stooge <- read_csv("~/Desktop/16/CS353/homework_2/stooge_runtimes.csv")
+```
+
+```{r}
+selection |>
+  ggplot(aes(x = size, y = time)) +
+  geom_point() +
+  labs(title = "Selection Sort Timing")
+```
+
+```{r}
+insertion |>
+  ggplot(aes(x = size, y = time)) +
+  geom_point() +
+  labs(title = "Insertion Sort Timing")
+```
+
+```{r}
+bubble |>
+  ggplot(aes(x = size, y = time)) +
+  geom_point() +
+  labs(title = "Bubble Sort Timing")
+```
+
+```{r}
+merge |>
+  ggplot(aes(x = size, y = time)) +
+  geom_point() +
+  labs(title = "Merge Sort Timing")
+```
+
+```{r}
+quick |>
+  ggplot(aes(x = size, y = time)) +
+  geom_point() +
+  labs(title = "Quick Sort Timing")
+```
+
+```{r}
+stooge |>
+  ggplot(aes(x = size, y = time)) +
+  geom_point() +
+  labs(title = "Stooge Sort Timing")
+```

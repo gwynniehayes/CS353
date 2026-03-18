@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/gwynnie/Desktop/16/CS353/sum_timing'
+relocations:     []
+...

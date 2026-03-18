@@ -1,0 +1,47 @@
+---
+title: "homework 1 plots"
+format: pdf
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+```
+
+```{r}
+sum1 <- read_csv("~/Desktop/16/CS353/sum1_runtimes.csv")
+sum2 <- read_csv("~/Desktop/16/CS353/sum2_runtimes.csv")
+sort <- read_csv("~/Desktop/16/CS353/sort_runtimes.csv")
+inplacesort <- read_csv("~/Desktop/16/CS353/sortinplace_runtimes.csv")
+```
+
+```{r}
+sum1 |>
+  ggplot(aes(x = n, y = time)) +
+  geom_point() +
+  labs(title = "Sum Timing 1")
+```
+
+```{r}
+sum2 |>
+  ggplot(aes(x = n, y = time)) +
+  geom_point() +
+  labs(title = "Sum Timing 2")
+```
+
+```{r}
+sort |>
+  ggplot(aes(x = size, y = time)) +
+  geom_point() +
+  labs(title = "Sort Timing")
+```
+
+```{r}
+inplacesort |>
+  ggplot(aes(x = size, y = time)) +
+  geom_point() +
+  labs(title = "In Place Sort Timing")
+```
+

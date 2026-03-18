@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "name": "Mac",
+      "compilerPath": "/usr/bin/clang++",
+      "intelliSenseMode": "macos-clang-arm64",
+      "cppStandard": "c++17",
+      "cStandard": "c17",
+      "includePath": [
+        "${workspaceFolder}/**"
+      ]
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/gwynnie/Desktop/16/CS353/project_1",
+      "program": "/Users/gwynnie/Desktop/16/CS353/project_1/build/Debug/outDebug"
+    }
+  ],
+  "version": 4
+}
