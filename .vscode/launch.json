@@ -15,8 +15,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/gwynnie/Desktop/16/CS353/project_1",
-      "program": "/Users/gwynnie/Desktop/16/CS353/project_1/build/Debug/outDebug"
+      "cwd": "/Users/gwynnie/Desktop/16/CS353/exam_3",
+      "program": "/Users/gwynnie/Desktop/16/CS353/exam_3/build/Debug/outDebug"
     }
   ],
   "version": 4
